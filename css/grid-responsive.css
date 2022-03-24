@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+:root{
+    --lila-color:#d7bde1 ;
+    --rosa-color:#ffcbdbd9;
+    --blue-color:#d6f5ff;
+    --yellow-color:#fdecb6;
+
+}
+body{
+    font-family: sans-serif;
+    background:linear-gradient(to right, #ffcbdbd9, #d7bde1);
+}
+.h1{
+    text-align: center;
+    font-size: 70px;
+    text-align: center;
+    color:whitesmoke;
+    text-shadow: 3px 3px 1px black;
+    text-decoration-line: black;
+}
+.fondo1{
+    background-image:url(../images/fondo1.jpg);
+}
+.menu{
+   margin: 30px;
+    font-family:"Poppins", sans-serif;
+    font-size:19px ;
+    display: grid;
+    text-align: center;
+    background-color: purple;
+    border: 5px solid white;
+    border-radius: 15%;
+    
+}
+
+.menu a{
+    text-decoration: none;
+    color: white; 
+}
+
+.container1{
+    display: grid;
+    grid-template-columns:auto;
+    grid-template-rows: auto auto auto;
+    background: rgba(255, 255, 255, 0.747);
+    margin: 20px;
+}
+ h2{
+    grid-row:1;
+    text-align: center;
+    color: rgb(0, 0, 0);                     
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    background:linear-gradient(to right, #ffcbdbd9, #d7bde1 );
+    text-shadow: 3px 3px 1px whitesmoke;
+
+}
+.container1 img{
+    max-width: 300px;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+    border-radius: 20%;
+    margin: 40px 5px 10px 10px ;
+   
+}
+
+.container1 p{
+    grid-row: 3;
+    font-size: 14px;
+    text-align: center;
+    max-width: 350px;
+    align-self: center;
+    justify-self: center;
+
+}
+
+.lineadetiempo{
+     display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+     
+}
+.lineadetiempo img{
+    max-width: 400px;
+}
+
+.a{
+    background: rgba(255, 255, 255, 0.747);
+    max-width: 450px;
+    text-align: center;
+    grid-column: 2;
+    display: grid;
+    grid-template-areas:
+    "año"
+    "imagen"
+    "parrafo"
+    ;
+}
+.a h3{
+    color: White;
+    text-shadow: 3px 3px 1px #ffcbdbd9 ;
+    background-image: url(../images/lineadetiempo.jpg);
+    grid-area: año;
+    font-size: 20px;
+
+}
+.a img{
+    grid-area: imagen;
+    align-self: center;
+    justify-self: center;
+    max-width: 350px;
+    
+}
+.a2{
+    background: rgba(255, 255, 255, 0.747);
+    max-width: 450px;
+    text-align: center;
+    grid-column: 2;
+    display: grid;
+    grid-template-areas:
+    "año"
+    "imagen"
+    "parrafo"
+    ;
+}
+.a2 h3{
+    color: White;
+    text-shadow: 3px 3px 1px #ffcbdbd9 ;
+    background-image: url(../images/lineadetiempo.jpg);
+    grid-area: año;
+    font-size: 20px;
+
+}
+.a2 img{
+    grid-area: imagen;
+    align-self: center;
+    justify-self: center;
+    max-width: 250px;
+    
+}
+
+/*Resolución tabletas*/
+@media screen and (min-width:768px) {
+    p{
+        font-size: 16px;
+    }
+    .container1{
+        grid-template-columns:auto auto;
+        grid-template-rows: auto auto auto;
+
+    }
+    .container1 img{
+        grid-row: 1/3;
+        grid-column: 1;
+    
+    }
+    .container1 h2{
+        font-size: 30px;
+        grid-column: 2;
+    }
+    .container1 p{
+        grid-column: 2;
+        grid-row: 2;
+        text-align: justify;
+        max-width:400px ;
+        font-size: 16px;
+
+
+    }
+    .a {
+        max-width: 800px;
+        grid-template-areas:
+        " año  año imagen "
+        " año  año parrafo "
+        ;
+        gap: 10px
+ 
+    }
+    .a img{
+        padding: 10px;
+
+    }
+    .a h3{
+        background-image: url(../images/lineadetiempo.jpg);
+        padding: 250px 50px;
+        font-size: 20px;
+        align-self: center;
+        justify-self: center;
+
+    }
+    .a p{
+        padding: 10px;
+    }
+    .a2 {
+        align-self: center;
+        justify-self: center;
+        max-width: 800px;
+        grid-template-areas:
+        "  imagen  año  año"
+        " parrafo año  año "
+        ;
+        padding: 20px;
+    }
+    .a2 img{
+        padding: 20px;
+    }
+    .a2 h3{
+        padding: 250px 50px;
+        background-image: url(../images/lineadetiempo.jpg);
+        align-self: center;
+        justify-self: center;
+
+    }
+    .a2 p{
+        padding: 20px;
+    }
+   
+    
+}
+
+/*Resolución media*/
+@media screen and (min-width:1024px) {
+    .menu{
+        grid-template-columns: repeat(6, 1fr);
+
+    }
+    .container1 p{
+        max-width: 700px;
+        font-size: 20px;
+    }
+    .lineadetiempo img{
+        max-width: 380px;
+    }
+    .a {
+        max-width: 1020px;
+        
+
+    }
+    .a2 {
+        max-width: 1000px;
+      
+    }
+}
+
+/*Resolución macro*/
+@media screen and (min-width:1200px) {
+.container1{
+    margin: 80px;
+}
+    .a{
+        margin: 180px;
+        grid-column:1/ 2;
+
+    }
+    .a p{
+        font-size: 19px;
+    }
+    .a2{
+        grid-column: 3/4;
+        margin-right: 180px;
+    }
+    .a2 p{
+        font-size: 19px;
+    }
+}
+
