@@ -90,8 +90,7 @@ body{
     align-items: center;
     margin:20px 150px;
     padding: 20px;
-    width:560;
-    height: 315;
+    width: 100%;
 }
 
 #formulario{
@@ -117,8 +116,10 @@ body{
         margin-left: 1rem; 
     }
     .form-label{
+        background:linear-gradient(to right, #ffcbdbd9, #d7bde1 );
         text-align: left;
-        padding: 0.82rem 8rem;
+        width: 14rem;
+ 
   
     }
 
@@ -169,6 +170,11 @@ body{
     .boton{
         margin-left: 380px;
     }
+    .form-label{
+        text-align: left;
+        width: 40rem;
+  
+    }
     
 }
 
@@ -183,7 +189,17 @@ body{
     
     }
     .boton{
-        margin-left: 430px;
+        margin-left: 230px;
+    }
+    .form-label{
+        text-align: left;
+        width: 10rem;
+  
+    }
+    .form-label{
+        text-align: left;
+        padding: 0.82rem 24rem;
+  
     }
     
 }
@@ -195,6 +211,11 @@ body{
     }
     .boton {
         margin-left: 690px;
+    }
+    .form-label{
+        text-align: left;
+        width: 14rem;
+  
     }
     
 }
