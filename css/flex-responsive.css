@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
@@ -218,4 +219,205 @@ body{
   
     }
     
+=======
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+:root{
+    --lila-color:#d7bde1 ;
+    --rosa-color:#ffcbdbd9;
+    --blue-color:#d6f5ff;
+    --yellow-color:#fdecb6;
+
+}
+h2{
+    grid-row:1;
+    text-align: center;
+    color: rgb(0, 0, 0);                     
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    background:linear-gradient(to right, #ffcbdbd9, #d7bde1 );
+    text-shadow: 3px 3px 1px whitesmoke;
+
+}
+body{
+    font-family: sans-serif;
+    background:linear-gradient(to right, #ffcbdbd9, #d7bde1);
+}
+.h1{
+    text-align: center;
+    font-size: 70px;
+    text-align: center;
+    color:whitesmoke;
+    text-shadow: 3px 3px 1px black;
+    text-decoration-line: black;
+}
+.fondo1{
+    background-image:url(../images/fondo1.jpg);
+}
+.menu{
+   margin: 30px;
+    font-family:"Poppins", sans-serif;
+    font-size:19px ;
+    display: grid;
+    text-align: center;
+    background-color: purple;
+    border: 5px solid white;
+    border-radius: 15%;
+    
+}
+
+.menu a{
+    text-decoration: none;
+    color: white; 
+}
+
+
+.fondo3{
+    background-image:url(../images/fondo4.jpg) ;
+}
+.giveaway{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px ;
+    height: auto;
+    background: rgba(255, 255, 255, 0.747);
+    border-radius: 10%;
+    box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+    display: flex;
+    margin:40px auto ;
+
+}
+.giveaway h2{
+    text-align: center;  
+    max-width: 400px;                                       
+    color: rgb(0, 0, 0);                     
+    font-size: 60px;
+    background:linear-gradient(to right, #ffcbdbd9, #d7bde1 );
+    text-shadow: 3px 3px 1px whitesmoke;
+    border-radius: 15px;
+    align-items: center;
+   
+}
+.giveaway p{
+    justify-content: center;
+    font-size: 18px;
+    text-align: justify;
+    margin: 10px
+}
+.giveaway iframe{
+    align-items: center;
+    margin:20px 150px;
+    padding: 20px;
+    width:560;
+    height: 315;
+}
+
+#formulario{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-self: center;
+    max-width: 1500px;
+    background: rgba(255, 255, 255, 0.747);
+    margin: 20px;
+    font-size: 20px;
+}
+    .form-group{
+        margin: 8px;
+        display: flex;
+        flex-direction: column; 
+        padding: 10px;   
+    }
+    #form{
+        font-weight: 200;
+        margin-left: 1rem; 
+    }
+    .form-label{
+        text-align: left;
+        padding: 0.82rem 8rem;
+  
+    }
+
+    #cancion{
+        text-align: center;
+        margin: 0.8rem;
+        
+    }
+
+    .final{
+        padding: 50px;
+        text-align: center;
+        font-weight: 800;
+    }
+    .boton{
+        display: flex;
+        width:50px;
+        text-align: center;
+        align-self: center;
+        margin-left: 180px;
+        justify-self: center;
+        background-color: var(--yellow-color) ;
+        color:black;
+        padding: 20px 60px;
+        border-radius: 10px;
+    }
+    .boton a{
+        text-align:center;
+        font-family: 'Poppins', sans-serif; ;
+        font-size: 20px;
+        text-decoration: none;/*No salga la linea de subrayado*/
+        color: black;
+        font-weight: 600;
+    }
+    .boton:hover{
+        background-color: var(--blue-color);
+        transition-property: background-color;
+        transition-duration: 1s;
+        transition-timing-function:ease-in-out;
+        transition-delay: 1s;
+    }
+    
+/*Resolución tabletas*/
+@media screen and (min-width:768px) {
+    .giveaway{
+        max-width: 800px ;
+    }
+    .boton{
+        margin-left: 380px;
+    }
+    
+}
+
+/*Resolución media*/
+@media screen and (min-width:1024px) {
+    .menu{
+        grid-template-columns: repeat(6, 1fr);
+
+    }
+    .giveaway{
+        max-width: 1000px ;
+    
+    }
+    .boton{
+        margin-left: 430px;
+    }
+    
+}
+
+/*Resolución macro*/
+@media screen and (min-width:1200px) {
+    #formulario{
+       margin:  0 180px;
+    }
+    .boton {
+        margin-left: 690px;
+    }
+    
+>>>>>>> 72d7def623d45096db408f28ec3b5261341a622f
 }
