@@ -219,7 +219,7 @@ body{
   
     }
     
-=======
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
@@ -418,6 +418,5 @@ body{
     .boton {
         margin-left: 690px;
     }
-    
->>>>>>> 72d7def623d45096db408f28ec3b5261341a622f
+}
 }
